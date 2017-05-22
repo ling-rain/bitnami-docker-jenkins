@@ -8,7 +8,7 @@ RUN bitnami-pkg install tomcat-8.0.43-1 --checksum 158989efe9f23194e5e1611cafc05
 RUN bitnami-pkg install git-2.10.1-2 --checksum 6f9fd8b0591f268f965930db0c091598e5c4f9dccbb6853010e1ac9e5035cd6f
 RUN bitnami-pkg unpack jenkins-2.61-2 --checksum c9a7c95ac8b4f0893d9e5520bbad813850e7c7833161c51d37f0c66f373007c0
 
-COPY rootfs /
+COPY /2/rootfs /
 
 ENV BITNAMI_APP_NAME="jenkins" \
     BITNAMI_IMAGE_VERSION="2.61-r2" \
